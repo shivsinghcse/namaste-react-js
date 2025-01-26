@@ -3,7 +3,7 @@
 ## Tips
 
 - Make your own notes
-- Use you Laptop
+- Use your Laptop
 - Maintain your github
 - complete all assignment
 
@@ -25,7 +25,7 @@
 ## JS Engine
 
 - Browser have javascript engine in it. which execute the javascript code.
-- But browser does does not understand react code.
+- But browser does not understand react code.
 - so we have to get React into our project.
 
 **But how??**
