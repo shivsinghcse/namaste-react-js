@@ -1,0 +1,37 @@
+body{
+background-color: yellow;
+height: 100vh;
+}
+#main-heading{
+text-align: center;
+text-decoration: underline;
+}
+
+#box1{
+    border: 5px solid #000;
+    height: 400px;
+    width: 450px;
+    margin: 100px auto;
+    background-color: #23ef45;
+}
+#box2{
+    border: 5px solid #000;
+    background-color: #f03d6a;
+    height: 300px;
+    width: 350px;
+    margin: 50px;
+}
+#box3{
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: #eaf346;
+    height: 200px;
+    width: 200px;
+    margin: 50px auto;
+}
+
+#name{
+    margin-top: 45%;
+    font-weight: bold;
+    text-align: center;
+    }
