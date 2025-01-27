@@ -24,5 +24,8 @@
   },
   "browserslist":[
     "last 2 versions" 
+  ],
+  "presets": [
+    ["@babel/preset-react", { "runtime": "automatic" }]
   ]
 }
