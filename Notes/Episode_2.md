@@ -35,9 +35,9 @@
 # installing pacakage/depene...
 
 - The most important package in our project is "bundler".
-- **Bundler** - webpack, parcel, vite are bundler. we will learn defination later.
+- **Bundler** - webpack, parcel, vite are bundlers. we will learn defination later.
 
-- `create react app` using webpack and babel behind the sences build things up.
+- `create react app` uses webpack and babel behind the sences to build things up.
 
 - In our project we will use parcel it depends on choice, at the end of the day all bundler are doing the same thing algorithm of bundling can be different.
 - parcel is easy to use.
@@ -52,15 +52,15 @@
 - parcel is Dev dependency. So we use bundler in development phase so we install parcel here as dev dependency that's why we use -D flag.
 - parcel is the beast.
 
-## Difference between caret and ~ in npm
+## Difference between ^caret and ~ in npm
 
 - when you use `"^2.10.2"` caret(^) if after some time a new minor version eg. 2.10.3 comes parcel updated it automatically. but if you use tilde(~) it will install major version automatically. It will always safe to use ^ caret.
 
 ##
 
 - when we install parcel, devDependencies are added in package.json and also we got another file called package-lock.json
-- package-lock.json keep a track of
-  exact version that is being installed.
+- package-lock.json keep a track of 
+  exact version of dependencies that is being installed.
 
 - If you have your package.json and package-lock.json you can recreate your entire node module folder. Whatever you can re-generate don't put it on git.
 - Now we will use parcel to ignite our app `npx parcel index.html`
@@ -70,7 +70,7 @@
 - after running command now it saying `Server running at http://localhost:1234`
 - now our project is hosted on localhost:1234 port
 
-- Other way to get react into our app via npm. Injecting React via CDN links is not a prefferd way. Because fetching from CDN takes costly operations.And also we have to update links when react will update.
+- Other way to get react into our app via npm. Injecting React via CDN links is not a prefferd way. Because fetching from CDN takes costly operations. And also we have to update links when react will update.
 
 - installing React `npm install react` and ReactDOM `npm install react-dom`
 
@@ -78,7 +78,7 @@
 
 - Dev Build
 - Local Server
-- HMR = Hot Module Replacement
+- HMR = Hot Module Replacement (refreshing page)
 - File Watching Algorithm - written in C++
 - Caching - Faster Builds
 - Image Optimization
@@ -94,8 +94,10 @@
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
 
+**Read parcel documentation**
+
 - How to create prod build?
-  `npx parcel build index.js` but remove `main: App.js` from package.json
+  `npx parcel build index.html` but remove `main: App.js` from package.json
 
 - Making our app browser version specific?
   - `browserslist.dev`
