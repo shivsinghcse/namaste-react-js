@@ -1,3 +1,33 @@
 * {
-    color: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: rgba(4, 158, 34, 0.5) 0px 4px 12px;
+}
+.nav-items ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-items ul li {
+    font-size: 20px;
+    padding: 28px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.nav-items ul li:hover {
+    color: #630A0C;
+    text-decoration: underline;
 }

@@ -1,38 +1,50 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const Title = () => (
-    <h1 className="heading" tabIndex="5">
-        Namaste React using JSX🚀
-    </h1>
-);
+/**
+ *  Header
+ *  - Logo
+ *  - Nav Items
+ *  Body
+ *  - Search
+ *  - RestaurantContainer
+ *      - RestaurantCard
+ *  Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
 
-const heading = (
-    <h1 className="heading" tabIndex="5">
-        Namaste React using JSX🚀
-    </h1>
-);
-// React Component
-// Class Based Component - Old
-// Functional Component - New
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img
+                    className="logo"
+                    src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All"
+                />
+            </div>
+            <div className='nav-items'>
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    );
+};
 
-// React Functional Component
-
-// Component Composition
-
-const number = 1000;
-
-const HeadingComponent = () => (
-    <div id="container">
-        <Title />
-        {Title()}
-        <h2>{number + number}</h2>
-        {heading}
-        {/* {console.log(123)} */}
-        <h1 className="heading">Namaste React Functional Component</h1>
-    </div>
-);
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header />
+        </div>
+    );
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);
