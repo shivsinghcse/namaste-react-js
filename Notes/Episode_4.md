@@ -21,10 +21,11 @@
   cuisine="Biryani . NortIndian . Asian"
 />
 <RestaurantCard resName="KFC" cuisine="Burger . Fast Food" />`
-- when you have to dynamically passing some data to a component you passing as a prop.
-- you can pass any number of props you wish too react wrap it up as object
+- when you have to dynamically passing some data to a component you passing as a props.
+- you can pass any number of props you wish too react wrap it up as object called props, ypu can name it anything
 - destructuring on the fly
--
+-`const RestaurantCard = ({resName, cuisine}) => {}`
+- install **JSON viewer** chrome extension to see api data in JSON format.
 - config driven UI : means that your UI is basically driven by a config(data is the config)
 
 - warning : Each child in a list should have a unique "key" property. means that when you looping/iterate on any list, each item should be uniquely represented.
