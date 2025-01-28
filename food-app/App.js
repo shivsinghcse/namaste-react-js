@@ -39,7 +39,10 @@ const Header = () => {
     );
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = ({ resName, cuisine }) => {
+    // const { resName, cuisine } = props;
+    // console.log(props);
+
     return (
         <div className="res-card">
             <img
@@ -51,11 +54,14 @@ const RestaurantCard = () => {
                     height: '65%',
                 }}
             />
-            <div className="res-details" style={{
-                lineHeight: 1.4,
-                paddingLeft: '10px',
-            }}>
-                <h3 style={{ marginTop: '5px' }}>Punjabi Dhaba</h3>
+            <div
+                className="res-details"
+                style={{
+                    lineHeight: 1.4,
+                    paddingLeft: '10px',
+                }}
+            >
+                <h3 style={{ marginTop: '5px' }}>{resName}</h3>
                 <h4
                     style={{
                         fontWeight: '600',
@@ -68,7 +74,7 @@ const RestaurantCard = () => {
                         }}
                     >
                         &#9733;
-                    </span>{' '}
+                    </span>
                     4.3 | 25-50 mins
                 </h4>
                 <h4
@@ -77,7 +83,7 @@ const RestaurantCard = () => {
                         color: '#676A6D',
                     }}
                 >
-                    Thalis, North Indian, Biryani
+                    {cuisine}
                 </h4>
                 <h4
                     style={{
@@ -92,22 +98,21 @@ const RestaurantCard = () => {
     );
 };
 
+
+
 const Body = () => {
     return (
         <div className="body">
             <div className="search">Search</div>
-            <div className="res-container" >
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
+            <div className="res-container">
+                <RestaurantCard
+                    resName="Punjabi Dhaba (Aliganj)"
+                    cuisine="Thalis, North Indian, Biryani"
+                />
+                <RestaurantCard
+                    resName="Pizza Hut"
+                    cuisine="Pizzas, Burger, Fast Food"
+                />
             </div>
         </div>
     );
