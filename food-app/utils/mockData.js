@@ -1,330 +1,4 @@
-const resList = [
-    {
-        info: {
-            id: '60379',
-            name: 'Pizza Hut',
-            cloudinaryImageId:
-                'RX_THUMBNAIL/IMAGES/VENDOR/2024/7/17/a2d988f2-df13-4daf-8b29-4e5562e2c2d7_60379.jpg',
-            locality: 'Saharaganj Mall',
-            areaName: 'Hazratganj',
-            costForTwo: '₹350 for two',
-            cuisines: ['Pizzas'],
-            avgRating: 4.3,
-            parentId: '721',
-            avgRatingString: '4.3',
-            totalRatingsString: '2.7K+',
-            sla: {
-                deliveryTime: 30,
-                lastMileTravel: 1.8,
-                serviceability: 'SERVICEABLE',
-                slaString: '30-35 mins',
-                lastMileTravelString: '1.8 km',
-                iconType: 'ICON_TYPE_EMPTY',
-            },
-            availability: {
-                nextCloseTime: '2025-01-28 23:00:00',
-                opened: true,
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: 'Rxawards/_CATEGORY-Pizza.png',
-                        description: 'Delivery!',
-                    },
-                ],
-            },
-            isOpen: true,
-            aggregatedDiscountInfoV2: {},
-            type: 'F',
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: 'Delivery!',
-                                    imageId: 'Rxawards/_CATEGORY-Pizza.png',
-                                },
-                            },
-                        ],
-                    },
-                    textBased: {},
-                    textExtendedBadges: {},
-                },
-            },
-            differentiatedUi: {
-                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {},
-                },
-            },
-            reviewsSummary: {},
-            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: '--',
-                },
-            },
-            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-        },
-        analytics: {
-            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
-        },
-        cta: {
-            link: 'https://www.swiggy.com/city/lucknow/pizza-hut-saharaganj-mall-hazratganj-rest60379',
-            type: 'WEBLINK',
-        },
-    },
-    {
-        info: {
-            id: '636723',
-            name: 'Chinese Wok',
-            cloudinaryImageId: 'e0839ff574213e6f35b3899ebf1fc597',
-            locality: 'Mahanagar',
-            areaName: 'Mahanagar',
-            costForTwo: '₹250 for two',
-            cuisines: ['Chinese', 'Asian', 'Tibetan', 'Desserts'],
-            avgRating: 4.3,
-            parentId: '61955',
-            avgRatingString: '4.3',
-            totalRatingsString: '1.5K+',
-            sla: {
-                deliveryTime: 31,
-                lastMileTravel: 3.6,
-                serviceability: 'SERVICEABLE',
-                slaString: '30-35 mins',
-                lastMileTravelString: '3.6 km',
-                iconType: 'ICON_TYPE_EMPTY',
-            },
-            availability: {
-                nextCloseTime: '2025-01-29 01:00:00',
-                opened: true,
-            },
-            badges: {},
-            isOpen: true,
-            type: 'F',
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {},
-                },
-            },
-            aggregatedDiscountInfoV3: {
-                header: 'ITEMS',
-                subHeader: 'AT ₹129',
-            },
-            differentiatedUi: {
-                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {},
-                },
-            },
-            reviewsSummary: {},
-            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: '3.3',
-                    ratingCount: '48',
-                },
-                source: 'GOOGLE',
-                sourceIconImageId:
-                    'v1704440323/google_ratings/rating_google_tag',
-            },
-            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-        },
-        analytics: {
-            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
-        },
-        cta: {
-            link: 'https://www.swiggy.com/city/lucknow/chinese-wok-mahanagar-rest636723',
-            type: 'WEBLINK',
-        },
-    },
-    {
-        info: {
-            id: '59654',
-            name: 'Subway',
-            cloudinaryImageId:
-                'RX_THUMBNAIL/IMAGES/VENDOR/2025/1/21/567bae2d-7b43-41ad-aeb6-4ff87bfe5ba5_59654.JPG',
-            locality: 'Hazratganj',
-            areaName: 'Hazratganj',
-            costForTwo: '₹350 for two',
-            cuisines: ['sandwich', 'Salads', 'wrap', 'Healthy Food'],
-            avgRating: 4.4,
-            parentId: '2',
-            avgRatingString: '4.4',
-            totalRatingsString: '15K+',
-            sla: {
-                deliveryTime: 23,
-                lastMileTravel: 0.9,
-                serviceability: 'SERVICEABLE',
-                slaString: '20-25 mins',
-                lastMileTravelString: '0.9 km',
-                iconType: 'ICON_TYPE_EMPTY',
-            },
-            availability: {
-                nextCloseTime: '2025-01-29 04:00:00',
-                opened: true,
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: 'bolt/Bolt%20Listing%20badge@3x.png',
-                        description: 'bolt!',
-                    },
-                ],
-            },
-            isOpen: true,
-            type: 'F',
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: 'bolt!',
-                                    imageId:
-                                        'bolt/Bolt%20Listing%20badge@3x.png',
-                                },
-                            },
-                        ],
-                    },
-                    textBased: {},
-                    textExtendedBadges: {},
-                },
-            },
-            aggregatedDiscountInfoV3: {
-                header: 'ITEMS',
-                subHeader: 'AT ₹119',
-            },
-            differentiatedUi: {
-                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {},
-                },
-            },
-            reviewsSummary: {},
-            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: '4.1',
-                    ratingCount: '2.2K+',
-                },
-                source: 'GOOGLE',
-                sourceIconImageId:
-                    'v1704440323/google_ratings/rating_google_tag',
-            },
-            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-        },
-        analytics: {
-            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
-        },
-        cta: {
-            link: 'https://www.swiggy.com/city/lucknow/subway-hazratganj-rest59654',
-            type: 'WEBLINK',
-        },
-    },
-    {
-        info: {
-            id: '636391',
-            name: 'Baskin Robbins - Ice Cream Desserts',
-            cloudinaryImageId: '85ccae4e3576f9330af102c46ca85395',
-            locality: 'Park Road',
-            areaName: 'Sapru Marg',
-            costForTwo: '₹250 for two',
-            cuisines: ['Desserts', 'Ice Cream'],
-            avgRating: 4.5,
-            veg: true,
-            parentId: '5588',
-            avgRatingString: '4.5',
-            totalRatingsString: '245',
-            sla: {
-                deliveryTime: 21,
-                lastMileTravel: 0.8,
-                serviceability: 'SERVICEABLE',
-                slaString: '20-25 mins',
-                lastMileTravelString: '0.8 km',
-                iconType: 'ICON_TYPE_EMPTY',
-            },
-            availability: {
-                nextCloseTime: '2025-01-29 03:00:00',
-                opened: true,
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: 'bolt/Bolt%20Listing%20badge@3x.png',
-                        description: 'bolt!',
-                    },
-                    {
-                        imageId:
-                            'Green%20Dot%20Awards/Best%20In%20Ice%20cream.png',
-                        description: 'Delivery!',
-                    },
-                ],
-            },
-            isOpen: true,
-            type: 'F',
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: 'bolt!',
-                                    imageId:
-                                        'bolt/Bolt%20Listing%20badge@3x.png',
-                                },
-                            },
-                            {
-                                attributes: {
-                                    description: 'Delivery!',
-                                    imageId:
-                                        'Green%20Dot%20Awards/Best%20In%20Ice%20cream.png',
-                                },
-                            },
-                        ],
-                    },
-                    textBased: {},
-                    textExtendedBadges: {},
-                },
-            },
-            aggregatedDiscountInfoV3: {
-                header: '50% OFF',
-                subHeader: 'UPTO ₹90',
-            },
-            differentiatedUi: {
-                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {},
-                },
-            },
-            reviewsSummary: {},
-            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: '--',
-                },
-            },
-            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
-        },
-        analytics: {
-            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
-        },
-        cta: {
-            link: 'https://www.swiggy.com/city/lucknow/baskin-robbins-ice-cream-desserts-park-road-sapru-marg-rest636391',
-            type: 'WEBLINK',
-        },
-    },
+export const resList = [
     {
         info: {
             id: '367778',
@@ -1665,6 +1339,332 @@ const resList = [
         },
         cta: {
             link: 'https://www.swiggy.com/city/lucknow/chhappan-bhog-sadar-bazaar-rest70646',
+            type: 'WEBLINK',
+        },
+    },
+    {
+        info: {
+            id: '60379',
+            name: 'Pizza Hut',
+            cloudinaryImageId:
+                'RX_THUMBNAIL/IMAGES/VENDOR/2024/7/17/a2d988f2-df13-4daf-8b29-4e5562e2c2d7_60379.jpg',
+            locality: 'Saharaganj Mall',
+            areaName: 'Hazratganj',
+            costForTwo: '₹350 for two',
+            cuisines: ['Pizzas'],
+            avgRating: 4.3,
+            parentId: '721',
+            avgRatingString: '4.3',
+            totalRatingsString: '2.7K+',
+            sla: {
+                deliveryTime: 30,
+                lastMileTravel: 1.8,
+                serviceability: 'SERVICEABLE',
+                slaString: '30-35 mins',
+                lastMileTravelString: '1.8 km',
+                iconType: 'ICON_TYPE_EMPTY',
+            },
+            availability: {
+                nextCloseTime: '2025-01-28 23:00:00',
+                opened: true,
+            },
+            badges: {
+                imageBadges: [
+                    {
+                        imageId: 'Rxawards/_CATEGORY-Pizza.png',
+                        description: 'Delivery!',
+                    },
+                ],
+            },
+            isOpen: true,
+            aggregatedDiscountInfoV2: {},
+            type: 'F',
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
+                            {
+                                attributes: {
+                                    description: 'Delivery!',
+                                    imageId: 'Rxawards/_CATEGORY-Pizza.png',
+                                },
+                            },
+                        ],
+                    },
+                    textBased: {},
+                    textExtendedBadges: {},
+                },
+            },
+            differentiatedUi: {
+                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {},
+                },
+            },
+            reviewsSummary: {},
+            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: '--',
+                },
+            },
+            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+        },
+        analytics: {
+            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
+        },
+        cta: {
+            link: 'https://www.swiggy.com/city/lucknow/pizza-hut-saharaganj-mall-hazratganj-rest60379',
+            type: 'WEBLINK',
+        },
+    },
+    {
+        info: {
+            id: '636723',
+            name: 'Chinese Wok',
+            cloudinaryImageId: 'e0839ff574213e6f35b3899ebf1fc597',
+            locality: 'Mahanagar',
+            areaName: 'Mahanagar',
+            costForTwo: '₹250 for two',
+            cuisines: ['Chinese', 'Asian', 'Tibetan', 'Desserts'],
+            avgRating: 4.3,
+            parentId: '61955',
+            avgRatingString: '4.3',
+            totalRatingsString: '1.5K+',
+            sla: {
+                deliveryTime: 31,
+                lastMileTravel: 3.6,
+                serviceability: 'SERVICEABLE',
+                slaString: '30-35 mins',
+                lastMileTravelString: '3.6 km',
+                iconType: 'ICON_TYPE_EMPTY',
+            },
+            availability: {
+                nextCloseTime: '2025-01-29 01:00:00',
+                opened: true,
+            },
+            badges: {},
+            isOpen: true,
+            type: 'F',
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {},
+                },
+            },
+            aggregatedDiscountInfoV3: {
+                header: 'ITEMS',
+                subHeader: 'AT ₹129',
+            },
+            differentiatedUi: {
+                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {},
+                },
+            },
+            reviewsSummary: {},
+            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: '3.3',
+                    ratingCount: '48',
+                },
+                source: 'GOOGLE',
+                sourceIconImageId:
+                    'v1704440323/google_ratings/rating_google_tag',
+            },
+            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+        },
+        analytics: {
+            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
+        },
+        cta: {
+            link: 'https://www.swiggy.com/city/lucknow/chinese-wok-mahanagar-rest636723',
+            type: 'WEBLINK',
+        },
+    },
+    {
+        info: {
+            id: '59654',
+            name: 'Subway',
+            cloudinaryImageId:
+                'RX_THUMBNAIL/IMAGES/VENDOR/2025/1/21/567bae2d-7b43-41ad-aeb6-4ff87bfe5ba5_59654.JPG',
+            locality: 'Hazratganj',
+            areaName: 'Hazratganj',
+            costForTwo: '₹350 for two',
+            cuisines: ['sandwich', 'Salads', 'wrap', 'Healthy Food'],
+            avgRating: 4.4,
+            parentId: '2',
+            avgRatingString: '4.4',
+            totalRatingsString: '15K+',
+            sla: {
+                deliveryTime: 23,
+                lastMileTravel: 0.9,
+                serviceability: 'SERVICEABLE',
+                slaString: '20-25 mins',
+                lastMileTravelString: '0.9 km',
+                iconType: 'ICON_TYPE_EMPTY',
+            },
+            availability: {
+                nextCloseTime: '2025-01-29 04:00:00',
+                opened: true,
+            },
+            badges: {
+                imageBadges: [
+                    {
+                        imageId: 'bolt/Bolt%20Listing%20badge@3x.png',
+                        description: 'bolt!',
+                    },
+                ],
+            },
+            isOpen: true,
+            type: 'F',
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
+                            {
+                                attributes: {
+                                    description: 'bolt!',
+                                    imageId:
+                                        'bolt/Bolt%20Listing%20badge@3x.png',
+                                },
+                            },
+                        ],
+                    },
+                    textBased: {},
+                    textExtendedBadges: {},
+                },
+            },
+            aggregatedDiscountInfoV3: {
+                header: 'ITEMS',
+                subHeader: 'AT ₹119',
+            },
+            differentiatedUi: {
+                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {},
+                },
+            },
+            reviewsSummary: {},
+            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: '4.1',
+                    ratingCount: '2.2K+',
+                },
+                source: 'GOOGLE',
+                sourceIconImageId:
+                    'v1704440323/google_ratings/rating_google_tag',
+            },
+            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+        },
+        analytics: {
+            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
+        },
+        cta: {
+            link: 'https://www.swiggy.com/city/lucknow/subway-hazratganj-rest59654',
+            type: 'WEBLINK',
+        },
+    },
+    {
+        info: {
+            id: '636391',
+            name: 'Baskin Robbins - Ice Cream Desserts',
+            cloudinaryImageId: '85ccae4e3576f9330af102c46ca85395',
+            locality: 'Park Road',
+            areaName: 'Sapru Marg',
+            costForTwo: '₹250 for two',
+            cuisines: ['Desserts', 'Ice Cream'],
+            avgRating: 4.5,
+            veg: true,
+            parentId: '5588',
+            avgRatingString: '4.5',
+            totalRatingsString: '245',
+            sla: {
+                deliveryTime: 21,
+                lastMileTravel: 0.8,
+                serviceability: 'SERVICEABLE',
+                slaString: '20-25 mins',
+                lastMileTravelString: '0.8 km',
+                iconType: 'ICON_TYPE_EMPTY',
+            },
+            availability: {
+                nextCloseTime: '2025-01-29 03:00:00',
+                opened: true,
+            },
+            badges: {
+                imageBadges: [
+                    {
+                        imageId: 'bolt/Bolt%20Listing%20badge@3x.png',
+                        description: 'bolt!',
+                    },
+                    {
+                        imageId:
+                            'Green%20Dot%20Awards/Best%20In%20Ice%20cream.png',
+                        description: 'Delivery!',
+                    },
+                ],
+            },
+            isOpen: true,
+            type: 'F',
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
+                            {
+                                attributes: {
+                                    description: 'bolt!',
+                                    imageId:
+                                        'bolt/Bolt%20Listing%20badge@3x.png',
+                                },
+                            },
+                            {
+                                attributes: {
+                                    description: 'Delivery!',
+                                    imageId:
+                                        'Green%20Dot%20Awards/Best%20In%20Ice%20cream.png',
+                                },
+                            },
+                        ],
+                    },
+                    textBased: {},
+                    textExtendedBadges: {},
+                },
+            },
+            aggregatedDiscountInfoV3: {
+                header: '50% OFF',
+                subHeader: 'UPTO ₹90',
+            },
+            differentiatedUi: {
+                displayType: 'ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT',
+                differentiatedUiMediaDetails: {
+                    lottie: {},
+                    video: {},
+                },
+            },
+            reviewsSummary: {},
+            displayType: 'RESTAURANT_DISPLAY_TYPE_DEFAULT',
+            restaurantOfferPresentationInfo: {},
+            externalRatings: {
+                aggregatedRating: {
+                    rating: '--',
+                },
+            },
+            ratingsDisplayPreference: 'RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY',
+        },
+        analytics: {
+            context: 'seo-data-0864c1ce-c124-422c-a7b2-9450b49087ee',
+        },
+        cta: {
+            link: 'https://www.swiggy.com/city/lucknow/baskin-robbins-ice-cream-desserts-park-road-sapru-marg-rest636391',
             type: 'WEBLINK',
         },
     },
