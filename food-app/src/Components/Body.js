@@ -124,6 +124,7 @@ const Body = () => {
                     className="carousal-cuisines"
                     style={{
                         display: 'flex',
+                        justifyContent: 'center',
                         flexWrap: 'wrap',
                     }}
                 >
