@@ -20,7 +20,8 @@ const RestaurantCard = (props) => {
                 alt="res-logo"
                 style={{
                     width: '100%',
-                    height: '65%',
+                    height: '200px',
+                    objectFit: 'cover',
                 }}
             />
             <div
