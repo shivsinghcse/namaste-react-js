@@ -1,7 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 const User = ({ name }) => {
     const [count] = useState(0);
     const [count2] = useState(1);
+
+    // useEffect(()=>{
+    //     getUserData();
+    // })
+
+    // async function getUserData (){}
+   
     return (
         <>
             <div
@@ -15,6 +22,7 @@ const User = ({ name }) => {
                 <h2>Name: {name}</h2>
                 <h3>Location: Lucknow</h3>
                 <p>Contact: shivsinghcse@gmail.com</p>
+                
             </div>
         </>
     );

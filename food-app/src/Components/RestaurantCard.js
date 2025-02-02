@@ -1,4 +1,4 @@
-import { CDN_URL } from "../../utils/constants";
+import { CDN_URL } from '../../utils/constants';
 
 const RestaurantCard = (props) => {
     const { resData } = props;
@@ -13,58 +13,23 @@ const RestaurantCard = (props) => {
     } = resData?.info;
 
     return (
-        <div className="res-card">
-            <img
-                className="res-logo"
-                src={CDN_URL + cloudinaryImageId}
-                alt="res-logo"
-                style={{
-                    width: '100%',
-                    height: '200px',
-                    objectFit: 'cover',
-                }}
-            />
-            <div
-                className="res-details"
-                style={{
-                    lineHeight: 1.4,
-                    paddingLeft: '10px',
-                }}
-            >
-                <h3 style={{ marginTop: '5px' }}>{name}</h3>
-                <h4
-                    style={{
-                        fontWeight: '600',
-                        fontSize: '14px',
-                        color: '#676A6D',
-                    }}
-                >
-                    <span
-                        style={{
-                            color: 'green',
-                        }}
-                    >
-                        &#9733;
-                    </span>
+        <div className="res-card rounded-xl w-60 hover:bg-red-3">
+            <div className="w-60 h-40">
+                <img
+                    className="res-logo w-60 h-40 object-cover rounded-2xl"
+                    src={CDN_URL + cloudinaryImageId}
+                    alt="res-logo"
+                />
+            </div>
+            <div className="res-details p-2 w-60">
+                <h4 className="text-lg font-bold m-1 truncate">{name}</h4>
+                <p className="text-md font-semibold text-black-500 truncate">
+                    <span className="text-green-700">&#9733;</span>
                     {' ' + avgRating} | {resData.info.sla.slaString} |{' '}
                     {costForTwo}
-                </h4>
-                <h4
-                    style={{
-                        fontWeight: '500',
-                        color: '#676A6D',
-                    }}
-                >
-                    {cuisines.join(', ')}
-                </h4>
-                <h4
-                    style={{
-                        fontWeight: 'normal',
-                        color: '#676A6D',
-                    }}
-                >
-                    {areaName}
-                </h4>
+                </p>
+                <p className="truncate">{cuisines.join(', ')}</p>
+                <p>{areaName}</p>
             </div>
         </div>
     );

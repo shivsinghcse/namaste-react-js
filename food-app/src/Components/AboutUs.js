@@ -1,4 +1,5 @@
 // import User from './User';
+
 import UserClass from './UserClass';
 import { Component } from 'react';
 
@@ -15,17 +16,19 @@ class AboutUs extends Component {
         console.log('Parent Render');
         return (
             <>
-                <h1>About</h1>
-                <h2>This is developed by Shiv Singh</h2>
-
-                <UserClass
-                    name={'Shiv Singh (class)'}
-                    location={'Lucknow(class'}
-                />
-                <UserClass
-                    name={'Ashutosh Singh (class)'}
-                    location={'Sitapur(class'}
-                />
+                <div className="bg-white w-[90%] mx-auto my-[2rem] flex flex-col items-center justify-center">
+                    <h1 className="text-4xl font-semibold underline">
+                        About Us
+                    </h1>
+                    <p className="text-2xl text-gray-400 m-4">
+                        This is a swiggy like food ordering web application.
+                    </p>
+                    <h2 className='font-semibold text-3xl  underline my-[2.5rem]'>Meet Our Developer</h2>
+                    <UserClass
+                        name={'Shiv Singh (class)'}
+                        location={'Lucknow(class'}
+                    />
+                </div>
             </>
         );
     }

@@ -1,58 +1,41 @@
 import RestaurantCard from './RestaurantCard';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Shimmer from './Shimmer';
 import { Link } from 'react-router';
-import FoodImageCarousal from './FoodImageCarousal';
-// import mockData, { resList } from '../../utils/mockData';
+import FoodInMind from './FoodInMind';
+import useRestaurant from '../../utils/useRestaurant';
+import useOnlineStatus from '../../utils/useOnlineStatus';
 
 const Body = () => {
-    const [listOfRestaurant, setListOfRestaurant] = useState([]);
     const [searchText, setSearchText] = useState('');
-    const [filteredRestaurant, setFilteredRestaurant] = useState([]);
-    const [inMinds, setInMinds] = useState([]);
-    console.log('body rendered');
-    // console.log(listOfRestaurant);
 
-    useEffect(() => {
-        fetchData();
-    }, []);
+    const [listOfRestaurant, filteredRestaurant, inMinds] = useRestaurant();
+    const onlineStatus = useOnlineStatus();
+    // console.log(inMinds);
 
-    // console.log(useState());
-
-    const fetchData = async () => {
-        const url =
-            'https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8466937&lng=80.94616599999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING';
-        const response = await fetch(url);
-        const json = await response.json();
-        // console.log(json);
-
-        setListOfRestaurant(
-            // optional chaining
-
-            json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-                ?.restaurants
+    if (onlineStatus === false)
+        return (
+            <div
+                style={{
+                    width: '100vw',
+                    height: '100vh',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}
+            >
+                <h1>
+                    Looks like you're offline....!! Please check your internet
+                    connection.
+                </h1>
+            </div>
         );
-        setFilteredRestaurant(
-            // optional chaining
-
-            json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-                ?.restaurants
-        );
-
-        setInMinds(
-            json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info
-        );
-
-        // console.log( json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
-    };
-
-    console.log(inMinds);
 
     return listOfRestaurant.length === 0 ? (
         <Shimmer />
     ) : (
         <div className="body">
-            <div className="filter">
+            {/* <div className="filter">
                 <div className="search">
                     <input
                         type="text"
@@ -98,7 +81,7 @@ const Body = () => {
                         Top Rated Restaurant
                     </button>
                 </div>
-            </div>
+            </div> */}
             <div
                 className="in-minds"
                 style={{
@@ -126,21 +109,24 @@ const Body = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         flexWrap: 'wrap',
+                        columnGap: '0.7rem',
                     }}
                 >
                     {inMinds.map((items) => {
-                        return <FoodImageCarousal resData={items} />;
+                        return <FoodInMind resData={items} key={items.id} />;
                     })}
                 </div>
             </div>
-            <div className="res-container-body">
+            {/*  restaurant container body */}
+            <div className="res-container-body w-[90%] mx-auto p-4">
+                {/* Top chain in Lucknow */}
                 <div className="top-res-chain-title">
-                    <h1  style={{
-                            padding: '1rem',
-                            fontWeight: 600,
-                        }}>Top restaurant chains in Lucknow</h1>
+                    <h1 className="my-10 text-3xl font-semibold ">
+                        Top restaurant chains in Lucknow
+                    </h1>
                 </div>
-                <div className="res-container">
+                {/* Restaurant container */}
+                <div className="flex flex-wrap justify-center gap-y-10 gap-x-10">
                     {filteredRestaurant.map((restaurant) => {
                         return (
                             <Link

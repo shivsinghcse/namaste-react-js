@@ -1,45 +1,47 @@
 import { Link } from 'react-router';
 import { LOGO_URL } from '../../utils/constants';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import useOnlineStatus from '../../utils/useOnlineStatus';
 
 const Header = () => {
     const [btn, setBtn] = useState('Login');
-
-    // useEffect(() => {
-    //     console.log('useEffect called');
-    // },[]);
-
-    // console.log('header renderd');
+    const onlineStatus = useOnlineStatus();
 
     return (
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src={LOGO_URL} />
+        <div className="min-w-full flex justify-between p-5 sticky top-0 left-0 bg-white shadow-xl">
+            <div className="w-20 ml-5">
+                <img
+                    className="hover:cursor-pointer rounded-full border-2 border-black"
+                    src={LOGO_URL}
+                />
             </div>
-            <div className="nav-items">
-                <ul>
-                    <li>
+            <div className="flex items-center">
+                <ul className="flex align-center gap-x-8 mx-5 p-2">
+                    <li className="text-red-600">
+                        Online Status: {onlineStatus ? '✅' : '🔴'}
+                    </li>
+                    <li className="text-red-800 text-xl font-semibold">
                         <Link to="/">Home</Link>
                     </li>
-                    <li>
+                    <li className="text-red-800 text-xl font-semibold">
                         <Link to="/about">About us</Link>
                     </li>
-                    <li>
+                    <li className="text-red-800 text-xl font-semibold">
                         <Link to="/contact">Contact us</Link>
                     </li>
-                    <li>Cart</li>
-
-                    <button
-                        className="login-logout-btn"
-                        onClick={() => {
-                            btn === 'Login'
-                                ? setBtn('Logout')
-                                : setBtn('Login');
-                        }}
-                    >
-                        {btn}
-                    </button>
+                    <li className="text-red-800 text-xl font-semibold">
+                        <Link to="/grocery">Grocery</Link>
+                    </li>
+                    <li className="text-red-800 text-xl font-semibold">Cart</li>
                 </ul>
+                <button
+                    className="mx-5 w-24 py-2 bg-green-700 font-semibold hover:cursor-pointer text-lg text-white rounded-md"
+                    onClick={() => {
+                        btn === 'Login' ? setBtn('Logout') : setBtn('Login');
+                    }}
+                >
+                    {btn}
+                </button>
             </div>
         </div>
     );
