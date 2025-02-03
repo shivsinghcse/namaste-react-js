@@ -8,7 +8,7 @@ const Header = () => {
     const onlineStatus = useOnlineStatus();
 
     return (
-        <div className="min-w-full flex justify-between p-5 sticky top-0 left-0 bg-white shadow-xl">
+        <div className="min-w-full flex justify-between p-5 sticky top-0 left-0 bg-white shadow-xl z-50">
             <div className="w-20 ml-5">
                 <img
                     className="hover:cursor-pointer rounded-full border-2 border-black"
