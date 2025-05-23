@@ -1,20 +1,24 @@
-# Episode 01 --- Inception
+# Episode 01 - Inception
 
-## Tips
+## 🎯 Tips : To Get Most out of this course 💯
 
-- Make your own notes
-- Use your Laptop
-- Maintain your github
-- complete all assignment
+- Make your own notes 📝
+- Use your Laptop 💻
+- Maintain your github 📈
+- complete all assignment ✅
 
-## Tools
+## 🔨 Tools we use in this course 
 
-- Google chrome
-- VS Code
+- **Browser :** Google chrome
+- **Code Editor :** VS Code
+
+## What is React⚛️?
+- React is an open-source JavaScript library that is used for creating user interface for Single Page Application (SPA).
+- It is mainly used for handeling view layer (UI-layer) of any web or mobile application.
 
 ## Emmet
 
-- It is a tool, which generate some code for us.
+- It is a plugin ( tool ) for editors, which generate some HTML and CSS code for us.
 
 <!--
 - DOM Create Element (API??)
@@ -22,7 +26,57 @@
 - appendChild()
  -->
 
-## JS Engine
+ ## "Hello world" using HTML
+
+ ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Namaste React</title>
+    </head>
+    <body>
+      <div id="root">
+        <h1>Hello World!</h1>
+      </div>
+    </body>
+  </html>
+ ```
+
+## "Hello world" using JavaScript
+
+```html
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Namaste React</title>
+   </head>
+   <body>
+     <div id="root"></div>
+ 
+     <script>
+       // creating heading element
+       const heading = document.createElement("h1");
+ 
+       // injecting text into element
+       heading.innerHTML = "Hello World from JS!"; // here we can also use innerText or textContent
+ 
+       // finding or selecting the root
+       // this root will get reference of the div which have id 'root'.
+       const root = document.getElementById("root");
+ 
+       // appending heading to root
+       root.appendChild(heading);
+     </script>
+   </body>
+ </html>
+```
+
+## "Hello world" using React
+### JS Engine
 
 - Browser have javascript engine in it. which execute the javascript code.
 - But browser does not understand react code.
@@ -31,77 +85,44 @@
 **But how??**
 
 - The 1st way to get React is via CDN (content Delivery Network)
-  - Search **cdn react** and visit on legacy.reactjs.org and copy the cdn links and paste into your file. This is the one way to get React inside our project.
+  - Search **cdn react** and visit on [legacy.reactjs.org](https://www.legacy.reactjs.org) and copy the cdn links and paste into your file. This is the one way to get React inside our project.
 - But it is Old way, find How to do this in a new version of React.
 - [React.dev](react.dev) new documentation.
 
-## Hello world using HTML
+### CDN :
+- Content Delivery Network, these are websites where react has been hosted and we are pulling (fetching) react into our project.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Namaste React</title>
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello World!</h1>
-    </div>
-  </body>
-</html>
-```
+### Why do we use CDN?
+- To reduce latency ( Delay in network communication ).
+- It is that annoying delay your experience when trying to access a webpage or video stream before it fully loads.
 
-## Hello world using JavaScript
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Namaste React</title>
-  </head>
-  <body>
-    <div id="root"></div>
 
-    <script>
-      // creating heading element
-      const heading = document.createElement("h1");
 
-      // injecting text into element
-      heading.innerHTML = "Hello World from JS!";
-
-      // finding or selecting the root
-      // this root will get reference of the div which have id 'root'.
-      const root = document.getElementById("root");
-
-      // appending heading to root
-      root.appendChild(heading);
-    </script>
-  </body>
-</html>
-```
-
-## Hello world using React
-
-- 1st import React cdn link into your project
+#### 1st import React cdn link into your project
 
 ```js
   <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <!--  this is plain JS code, React at the end of day the is JavaScript code,
-    react.development.js this file contains react code developed by some facbook
-    developer. This is the core file of react. -->
+   >
+  </script>
+    /*
+     This is plain JS code, React at the end of day the is JavaScript code,
+     "react.development.js" this file contains react code developed by some facbook
+     developer. This is the core file of react.
+     */
 
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
-    <!-- react-dom.development.js This is the react library which is useful for DOM operations or This is react-DOM which we need to modify DOM.-->
+    >
+    </script>
+
+     /*
+     "react-dom.development.js" This is the react library which is useful for
+     DOM operations or This is react-DOM which we need to modify DOM.
+    */
 ```
 
 - There are two files `react.development.js` and `react-dom.development.js`
