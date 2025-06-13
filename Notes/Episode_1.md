@@ -7,18 +7,19 @@
 - Maintain your github 📈
 - complete all assignment ✅
 
-## 🔨 Tools we use in this course 
+## 🔨 Tools we use in this course
 
 - **Browser :** Google chrome
 - **Code Editor :** VS Code
 
 ## What is React⚛️?
+
 - React is an open-source JavaScript library that is used for creating user interface for Single Page Application (SPA).
 - It is mainly used for handeling view layer (UI-layer) of any web or mobile application.
 
 ## Emmet
 
-- It is a plugin ( tool ) for editors, which generate some HTML and CSS code for us.
+- It is a plugin ( tool ) for editors, which generate some HTML and CSS code for us and enhance the developer exprince.
 
 <!--
 - DOM Create Element (API??)
@@ -26,59 +27,60 @@
 - appendChild()
  -->
 
- ## "Hello world" using HTML
+## "Hello world" using HTML
 
- ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Namaste React</title>
-    </head>
-    <body>
-      <div id="root">
-        <h1>Hello World!</h1>
-      </div>
-    </body>
-  </html>
- ```
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Hello World!</h1>
+    </div>
+  </body>
+</html>
+```
 
 ## "Hello world" using JavaScript
 
 ```html
- <!DOCTYPE html>
- <html lang="en">
-   <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Namaste React</title>
-   </head>
-   <body>
-     <div id="root"></div>
- 
-     <script>
-       // creating heading element
-       const heading = document.createElement("h1");
- 
-       // injecting text into element
-       heading.innerHTML = "Hello World from JS!"; // here we can also use innerText or textContent
- 
-       // finding or selecting the root
-       // this root will get reference of the div which have id 'root'.
-       const root = document.getElementById("root");
- 
-       // appending heading to root
-       root.appendChild(heading);
-     </script>
-   </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      // creating heading element
+      const heading = document.createElement("h1");
+
+      // injecting text into element
+      heading.innerHTML = "Hello World from JS!"; // here we can also use innerText or textContent
+
+      // finding or selecting the root
+      // this root will get reference of the div which have id 'root'.
+      const root = document.getElementById("root");
+
+      // appending heading to root
+      root.appendChild(heading);
+    </script>
+  </body>
+</html>
 ```
 
 ## "Hello world" using React
+
 ### JS Engine
 
-- Browser have javascript engine in it. which execute the javascript code.
+- Every Browser have javascript engine in it. which execute the javascript code.
 - But browser does not understand react code.
 - so we have to get React into our project.
 
@@ -90,14 +92,13 @@
 - [React.dev](react.dev) new documentation.
 
 ### CDN :
-- Content Delivery Network, these are websites where react has been hosted and we are pulling (fetching) react into our project.
+
+- CDN stands for Content Delivery Network, these are websites where react has been hosted and we are pulling (fetching) react into our project.
 
 ### Why do we use CDN?
+
 - To reduce latency ( Delay in network communication ).
 - It is that annoying delay your experience when trying to access a webpage or video stream before it fully loads.
-
-
-
 
 #### 1st import React cdn link into your project
 
@@ -145,6 +146,10 @@
 - So React works on different places for that we need different type of functions and methods to work on different places.
 - So this file `react-dom.development.js` is like a bridge between React and browsers.
 
+### What is crossorigin in the script tag?
+
+- A cross origin request is a request for a resource (eg. stylesheet, iframes, images, font or script) from another domain.
+
 ## creating an element using React
 
 - `const heading = React.createElement('h1', {}, 'Hello world from react!!');`
@@ -177,7 +182,7 @@ const heading = React.createElement(
 );
 ```
 
-- These `{ id: 'header', xyz: 'abc' },`Hello World from React!``are the props and`Hello World from React!` is children.
+- These `{ id: 'header', xyz: 'abc' },` Hello World from React!``are the props and`Hello World from React!` is children.
 
 - `console.log(heading);` //returns object
 - here **heading** is basically react-element and react-element is nothing but normal javascript object.
@@ -219,12 +224,18 @@ const parent = React.createElement("div", { id: "parent" }, [
 - React gives us a lot of helper function that we need to use to develop fast applications.
 
 
-# =============== Assignments ================
+### Extra points: 
+- `React.createElement()` creates element (JS object) in React
+- React was built to manipulate the DOM using JS
+- Most costly thing is change the dom tree on some update in the project
+- To optimize it React is used to do this using JS
+- React element is an object and render() method is responsible for converting it into html and put it onto the DOM
+- `props` are children + attributes we are passing
+- render() is used to convert object into tag and display it on the DOM.
 
-## What is Emmet?
-  - Emmet (formerly Zen Coding) is a set of plug-ins for text editors that allows for high-speed coding and editing in HTML, XML, XSLT, and other structured code formats via content assist. The project was started by Vadim Makeev in 2008.
+### What is difference between a library and a framework?
+- Library can work in a small portion of the app too unlike a framework.
+- Framework need to be used in a fully fleged app to use them. They can't be used in already existing project.
+- But react can be used inside your existing project as well.
 
-## Difference between library and framework?  
- - The technical difference between a framework and library lies in a term called Inversion of control.
 
-- When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.

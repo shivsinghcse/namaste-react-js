@@ -4,5 +4,5 @@
   heading.innerText = "Hello World from JavaScript😎";
   // selecting root element 
   const root = document.getElementById('root');
-  // insrting heading to root 
+  // inserting heading to root 
   root.appendChild(heading);
