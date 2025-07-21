@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6eeeccc;
+}
+
+h1 {
+    color: green;
+}
+h2 {
+    color: orange;
+}
+p {
+    color: blue;
+}
