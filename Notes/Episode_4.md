@@ -38,6 +38,6 @@
 ))}`
   - when ever looping on anything always you have to give a key
 - when the component are on same level, need unique id.
-- if there are no ids react will re-render all the component.
+- if there are no ids, react will re-render all the component.
 - React itself says never use indexes as the key.[Read more]
 - not using Keys(not acceptable) <<<<<<< index as key <<<<<<< unique id (best practice)
