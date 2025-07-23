@@ -26,7 +26,11 @@
 - destructuring on the fly
 -`const RestaurantCard = ({resName, cuisine}) => {}`
 - install **JSON viewer** chrome extension to see api data in JSON format.
-- config driven UI : means that your UI is basically driven by a config(data is the config)
+
+#### config driven UI :
+- means that your UI is basically driven by a config(data is the config)
+- Config Driven UI is a design pattern where the structure and behavior of the UI are determined by a configuration object (usually JSON or JS object), instead of hardcoding everything into the component logic.
+
 
 - warning : Each child in a list should have a unique "key" property. means that when you looping/iterate on any list, each item should be uniquely represented.
   `{reslist.map((restaurant) => (

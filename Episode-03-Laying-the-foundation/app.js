@@ -1,23 +1,37 @@
 import React from "react";
-import {createRoot} from "react-dom/client";
-const parent = React.createElement(
-    'div',
-    { id: 'parent' },
-    [
-        React.createElement('div', { id: 'child1', key: 1 }, [
-            React.createElement('h1', { key: 4}, 'This is a heading 1'),
-            React.createElement('h2', { key: 5}, 'This is a heading 2'),
-        ]),
-        React.createElement('div', { id: 'child2', key: 2 }, [
-            React.createElement('p', {key: 6}, 'This is a paragraph 1'),
-            React.createElement('p', { key: 7}, 'This is a paragraph 2'),
-        ])
-    ]
-);
+import { createRoot } from "react-dom/client";
 
-// console.log(parent);
+// JSX
+// const parent = (
+//   <h1 className="heading" tabIndex={1}>
+//     Hello from JSX and React
+//   </h1>
+// );
 
+const number  = 1000;
+const greet = () => {
+  console.log("Hello React")
+}
+// Title Component
+const Title = () => {
+  return <h1 className="head">This is the Title of App🚀</h1>;
+};
+// heading Component
+const HeadingComponent = () => {
+  return (
+    <>
+    {/* component composition */}
+      <div id="container">
+        <Title />
+        <h1 className="heading">Namaste React Functional Component, {number} {greet()}</h1>
+      </div>
+    </>
+  );
+};
 
-const root = createRoot(document.getElementById('root'));
+// const HeadingComponent = () => (
+//   <h1>Namaste React Functional Component</h1>
+// );
+const root = createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<HeadingComponent />);
